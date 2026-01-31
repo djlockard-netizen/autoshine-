@@ -1,0 +1,80 @@
+/* Dirty D's Auto Shine - Custom Styles */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default text-align center */
+.App {
+  text-align: left;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00A3FF;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00A3FF;
+}
+
+/* Selection color */
+::selection {
+  background: #00A3FF;
+  color: #000000;
+}
+
+/* Button animations */
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* Image hover effects */
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.1);
+}
+
+/* Calendar dark theme overrides */
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #00A3FF;
+  --rdp-background-color: #00A3FF;
+}
+
+.rdp-day_selected {
+  background-color: #00A3FF !important;
+  color: #000000 !important;
+}
+
+.rdp-day_today {
+  color: #00A3FF !important;
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: rgba(0, 163, 255, 0.2) !important;
+}
+
+/* Form focus states */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #00A3FF !important;
+  box-shadow: 0 0 0 1px #00A3FF;
+}
